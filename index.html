@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+<body>
+  <main>
+    <section class="container">
+      <div class="container__heading">
+        <div class="container__text">
+          <h1 class="container__title">My Balance</h1>
+          <div class="container__balance">$921.48</div>
+        </div>
+        <div class="container__circles">
+          <div class="container__circle container__circle--brown"></div>
+          <div class="container__circle container__circle--white"></div>
+        </div>
+      </div>
+    </section>
+    <section class="canvas__container">
+      <h2 class="canvas__heading">Spending - Last 7 days</h2>
+      <canvas id="myChart" aria-label="Bar Chart" role="img">
+      </canvas> 
+      <div class="canvas__info-container">
+        <div class="canvas__monthly-total">
+          <p class="canvas__text--grey">Total this month</p>
+          <p class="canvas__total">$478.33</p>
+        </div>
+        <div class="canvas__monthly-difference">
+          <p class="canvas__percent">+2.4%</p>
+          <p class="canvas__text--grey">from last month</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js"></script> 
+  <script src="app.js"></script>
+</body>
+</html>

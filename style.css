@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(27, 66%, 92%);  
+    min-height: 100vh; 
+}
+
+main {
+    background-color: hsl(27, 66%, 92%);  
+    max-width: 540px; 
+    width: 100%; 
+}
+
+.container {
+    margin: auto 16px; 
+}
+
+.container__heading {
+    padding: 22px 20px; 
+    background-color: hsl(10, 79%, 65%);
+    display: flex; 
+    justify-content: space-between;
+    color: white; 
+    margin-bottom: 16px; 
+    border-radius: 12px; 
+}
+
+.container__title {
+    font-size: 15px; 
+    line-height: 1.3; 
+}
+
+.container__balance {
+    font-size: 24px; 
+    line-height: 1.3; 
+}
+
+.container__circles {
+    position: relative; 
+}
+
+.container__circle {
+    height: 40px; 
+    width: 40px; 
+    position: absolute; 
+    border-radius: 50%; 
+    top: 0;
+    right: 0; 
+}
+
+.container__circle--brown {
+    background-color: hsl(25, 47%, 15%);  
+}
+
+.container__circle--white {
+    border: 2px solid white; 
+    transform: translatex(-50%); 
+}
+
+@media screen and (min-width: 440px) {
+    .container__heading {
+        padding: 27px 32px; 
+    }
+    .container__circle {
+        width: 48px; 
+        height: 48px; 
+    }
+    .container__balance {
+        font-size: 32px; 
+        font-weight: 700; 
+        line-height: 1.3; 
+    }
+    .container__title {
+        font-weight: 400; 
+        font-size: 18px; 
+    }
+}
+
+/* Canvas */ 
+
+.canvas__container {
+    margin: 0 16px; 
+    background-color: white;
+    border-radius: 12px; 
+}
+
+.canvas__heading {
+    padding: 24px 20px 40px 20px; 
+    color: hsl(25, 47%, 15%);
+}
+
+canvas {
+    width: 100%; 
+}
+
+.canvas__info-container {
+    display: flex; 
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 24px 20px 0; 
+    padding: 24px 0; 
+    border-top: 2px solid hsl(27, 66%, 92%); 
+}
+
+.canvas__total {
+    font-size: 30px; 
+    line-height: 1.3; 
+    font-weight: 700; 
+}
+
+.canvas__text--grey {
+    font-size: 15px; 
+    line-height: 1.3; 
+    color: hsl(27, 10%, 52%); 
+}
+
+.canvas__monthly-difference {
+    text-align: right; 
+}
+
+@media screen and (min-width: 440px) {
+    .canvas__container {
+        padding: 0 32px; 
+    }
+    .canvas__heading {
+        font-size: 32px; 
+        font-size: 1.3; 
+    }
+    .canvas__text--grey, .canvas__percent {
+        font-size: 18px; 
+    }
+    .canvas__total {
+        font-size: 48px; 
+    }
+    .canvas__percent, .canvas__total {
+        color: hsl(25, 47%, 15%); 
+    }
+    .canvas__info-container {
+        margin-top: 32px; 
+    }
+    .canvas__monthly-difference {
+        padding-bottom: 7px; 
+    }
+}
